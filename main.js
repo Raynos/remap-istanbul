@@ -4,6 +4,7 @@ var loadCoverage = require('./lib/loadCoverage');
 var remap = require('./lib/remap');
 var writeReport = require('./lib/writeReport');
 var MemoryStore = require('istanbul/lib/store/memory');
+var Promise = require('bluebird');
 
 /**
  * The basic API for utilising remap-istanbul

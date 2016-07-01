@@ -7,7 +7,7 @@ var remap = require('../lib/remap');
 var writeReport = require('../lib/writeReport');
 var MemoryStore = require('istanbul/lib/store/memory');
 var Collector = require('istanbul/lib/collector');
-
+var Promise = require('bluebird');
 /**
  * Helper function that reads from standard in and resolves a Promise with the
  * data or rejects with any errors.
